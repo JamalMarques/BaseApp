@@ -13,11 +13,13 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 
 import com.basesoft.baseapp.Common.Constants;
 import com.basesoft.baseapp.Fragments.FragmentNavDrawer;
+import com.basesoft.baseapp.Helpers.Utilities;
 import com.basesoft.baseapp.Models.NavDrawerItemAbs;
 import com.basesoft.baseapp.Models.NavItemCategory;
 import com.basesoft.baseapp.Models.NavItemNormal;
@@ -59,6 +61,21 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
                 //replaceFragmentNoBackStack();
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case android.R.id.home:
+                mDrawerLayout.openDrawer(GravityCompat.START);
+                Utilities.hideVirtualKeyBoard(this, getCoordinatorLayout());
+                break;
+            //Add more stuffs if necessary
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 
@@ -125,19 +142,13 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
 
     @Override
     public void onBackPressed() {
-        //Check it out! refactor when you think necessary
         /*Fragment fragmentOnTop;
-        fragmentOnTop = getSupportFragmentManager().findFragmentByTag(Constants.TAG_DASHBOARD);
+        fragmentOnTop = getSupportFragmentManager().findFragmentByTag(Constants.TAG_DASHBOARD);*/
         if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
             mDrawerLayout.closeDrawers();
         } else {
-            if (fragmentOnTop != null && fragmentOnTop.isVisible()) {
-                moveTaskToBack(true);
-            } else {
                 super.onBackPressed();
-            }
-        }*/
-        super.onBackPressed();
+        }
     }
 
 

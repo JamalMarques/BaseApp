@@ -39,5 +39,9 @@
     <dimen name="margin_left_labels">32dp</dimen>
     <dimen name="icon_notification_drawer_size">20dp</dimen>
 
+    <!-- Dialog -->
+    <dimen name="min_width_base_dialog">150dp</dimen>
+    <dimen name="dialog_icon_height_width">40dp</dimen>
+
 
 </resources>

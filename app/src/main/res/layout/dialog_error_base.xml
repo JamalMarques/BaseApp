@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spacing_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/spacing_large"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/spacing_large"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/modal_icon_alert_iv"
+            style="@style/wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/modal_icon_alert"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dialog_error_message"
+            style="@style/text_body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/modal_icon_alert_iv"
+            android:paddingLeft="@dimen/spacing_large"
+            android:text="@string/username_error_resetpw5" />
+
+    </LinearLayout>
+
+</LinearLayout>

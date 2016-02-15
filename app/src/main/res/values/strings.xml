@@ -16,6 +16,10 @@
     <string name="item_drawer_3">Item 3</string>
     <string name="item_drawer_4">Item 4</string>
     <string name="item_drawer_sing_out">Sing out</string>
+    <string name="common_failure_text">Error message!</string>
+    <string name="ok">Ok</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="progress_bar_generic_message">Loading</string>
 
 
 </resources>
