@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.basesoft.baseapp.Adapters.RecyclerNavigationDrawerAdapter;
+import com.basesoft.baseapp.Listeners.RecyclerViewListener;
 import com.basesoft.baseapp.Models.NavDrawerItemAbs;
 import com.basesoft.baseapp.R;
 

@@ -13,14 +13,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.humana.rightsource.Common.Constants;
-import com.humana.rightsource.CustomViews.FS_Humana_TextView;
-import com.humana.rightsource.Helpers.AvailableRefillsHelper;
-import com.humana.rightsource.Helpers.MessageNotificationsHelper;
-import com.humana.rightsource.Listeners.RecyclerViewListener;
-import com.humana.rightsource.Models.NavDrawerItemAbs;
-import com.humana.rightsource.Models.NavItemNormal;
-import com.humana.rightsource.R;
+import com.basesoft.baseapp.Common.Constants;
+import com.basesoft.baseapp.Listeners.RecyclerViewListener;
+import com.basesoft.baseapp.Models.NavDrawerItemAbs;
+import com.basesoft.baseapp.Models.NavItemNormal;
+import com.basesoft.baseapp.R;
+
 
 import java.util.ArrayList;
 
@@ -72,22 +70,16 @@ public class RecyclerNavigationDrawerAdapter extends RecyclerView.Adapter<Recycl
     public void onBindViewHolder(final ItemViewHolder holder, final int position) {
         final NavDrawerItemAbs item = items.get(position);
         holder.label.setText(item.getLabel());
-        if(item.getType() == Constants.NAV_ITEM_TYPE_NORMAL) {
+        if (item.getType() == Constants.NAV_ITEM_TYPE_NORMAL) {
 
-            int notificationNumber = 0;
-            if (item.getId() == Constants.ID_MENU_NOTIFICATIONS) {
-                notificationNumber = MessageNotificationsHelper.getNumberOfNotifications();
+            int notificationNumber = 8;
+
+            if (item.getId() == Constants.ID_MENU_SIGN_OUT) { //Log out item
+                holder.grayLine.setVisibility(View.VISIBLE);
             } else {
-                if (item.getId() == Constants.ID_MENU_AVAILABLE_REFILLS) { // available refills
-                    notificationNumber = AvailableRefillsHelper.getNumberOfRefills();
-                }else{
-                    if(item.getId() == Constants.ID_MENU_SIGN_OUT){ //Log out item
-                        holder.grayLine.setVisibility(View.VISIBLE);
-                    }else{
-                        holder.grayLine.setVisibility(View.GONE);
-                    }
-                }
+                holder.grayLine.setVisibility(View.GONE);
             }
+
 
             if (notificationNumber > 0) {
                 holder.notificationLayout.setVisibility(View.VISIBLE);
@@ -99,7 +91,7 @@ public class RecyclerNavigationDrawerAdapter extends RecyclerView.Adapter<Recycl
             holder.mainLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if( isSelectableName(items.get(position).getLabel()) ){
+                    if (isSelectableName(items.get(position).getLabel())) {
                         lastPositionSelected = position;
                     }
                     //lastPositionSelected = position;
@@ -113,7 +105,7 @@ public class RecyclerNavigationDrawerAdapter extends RecyclerView.Adapter<Recycl
 
     private boolean isSelectableName(String itemName){
         boolean selectable = true;
-        if( itemName.equals(context.getString(R.string.nav_menu_shop_products))
+        /*if( itemName.equals(context.getString(R.string.nav_menu_shop_products))
             || itemName.equals(context.getString(R.string.nav_menu_earn))
             || itemName.equals(context.getString(R.string.nav_menu_notifications))
             || itemName.equals(context.getString(R.string.nav_menu_reminders))
@@ -123,7 +115,7 @@ public class RecyclerNavigationDrawerAdapter extends RecyclerView.Adapter<Recycl
             || itemName.equals(context.getString(R.string.nav_menu_tips))
             || itemName.equals(context.getString(R.string.nav_menu_privacy)) ){
             selectable = false;
-        }
+        }*/
         return selectable;
     }
 
@@ -132,9 +124,9 @@ public class RecyclerNavigationDrawerAdapter extends RecyclerView.Adapter<Recycl
         if(type == Constants.NAV_ITEM_TYPE_NORMAL){
             Drawable drawableIcon;
             if (lastPositionSelected == position){
-                labelColor = R.color.green_H;
+                labelColor = R.color.colorAccent;
                 drawableIcon = context.getResources().getDrawable(((NavItemNormal)item).getIconId());
-                drawableIcon.setColorFilter(context.getResources().getColor(R.color.green_H), PorterDuff.Mode.SRC_ATOP);
+                drawableIcon.setColorFilter(context.getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
                 drawableIcon.setAlpha(255);
             }
             else{
@@ -170,10 +162,10 @@ public class RecyclerNavigationDrawerAdapter extends RecyclerView.Adapter<Recycl
         public ItemViewHolder(final View itemView,int itemType) {
             super(itemView);
             mainLayout = (LinearLayout)itemView.findViewById(R.id.main_layout);
-            label = (FS_Humana_TextView)itemView.findViewById(R.id.tv_label);
+            label = (TextView)itemView.findViewById(R.id.tv_label);
             if(itemType == Constants.NAV_ITEM_TYPE_NORMAL){
                 notificationLayout = (LinearLayout)itemView.findViewById(R.id.notific_layout);
-                notificationNumber = (FS_Humana_TextView)itemView.findViewById(R.id.tv_notif_num);
+                notificationNumber = (TextView)itemView.findViewById(R.id.tv_notif_num);
                 icon = (ImageView)itemView.findViewById(R.id.img_icon);
                 grayLine = (View)itemView.findViewById(R.id.gray_line);
             }

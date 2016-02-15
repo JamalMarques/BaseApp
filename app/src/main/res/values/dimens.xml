@@ -30,6 +30,14 @@
     <dimen name="padding_all_drawer">16dp</dimen>
     <dimen name="height_status_bar">24dp</dimen>
     <dimen name="height_header_drawer">94dp</dimen>
+    <dimen name="nav_drawer_width">300dp</dimen>
+    <dimen name="subtitles_and_items_height">48dp</dimen>
+    <dimen name="margin_right_drawer">16dp</dimen>
+    <dimen name="spacing_content_areas">8dp</dimen>
+    <dimen name="margin_left_drawer">16dp</dimen>
+    <dimen name="icon_item_size">24dp</dimen>
+    <dimen name="margin_left_labels">32dp</dimen>
+    <dimen name="icon_notification_drawer_size">20dp</dimen>
 
 
 </resources>
