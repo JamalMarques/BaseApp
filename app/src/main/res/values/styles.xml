@@ -1,11 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textViewStyle">@style/TextViewStyle.Base</item>
     </style>
 
     <style name="AppTheme" parent="AppTheme.Base">
@@ -20,6 +22,12 @@
 
     <style name="DialogStyle" parent="DialogStyle.Base">
         <!-- Add more if is necessary ( < v21)-->
+    </style>
+
+
+    <!-- Widgets styles -->
+    <style name="TextViewStyle.Base" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray3_H</item>
     </style>
 
 

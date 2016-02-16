@@ -56,8 +56,7 @@ public class DialogHelper {
 	// ============================
     public static void showCommonErrorDialog(Context context,
                                              @Nullable String message, boolean isCancelable,
-                                             @Nullable DialogInterface.OnClickListener onClickListener,
-                                             @Nullable String pid) {
+                                             @Nullable DialogInterface.OnClickListener onClickListener) {
 
 		LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
