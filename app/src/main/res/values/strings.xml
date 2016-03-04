@@ -3,14 +3,38 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_nav_drawer">NavDrawerActivity</string>
 
-    <!-- Drawer stuffs -->
+
+    <!-- ========== Font Names ========= -->
+    <string name="Roboto_Black">Roboto-Black</string>
+    <string name="Roboto_BlackItalic">Roboto-BlackItalic</string>
+    <string name="Roboto_Bold">Roboto-Bold</string>
+    <string name="Roboto_BoldItalic">Roboto-BoldItalic</string>
+    <string name="Roboto_Italic">Roboto-Italic</string>
+    <string name="Roboto_Light">Roboto-Light</string>
+    <string name="Roboto_LightItalic">Roboto-LightItalic</string>
+    <string name="Roboto_Medium">Roboto-Medium</string>
+    <string name="Roboto_MediumItalic">Roboto-MediumItalic</string>
+    <string name="Roboto_Regular">Roboto-Regular</string>
+    <string name="Roboto_Thin">Roboto-Thin</string>
+    <string name="Roboto_ThinItalic">Roboto-ThinItalic</string>
+    <string name="RobotoCondensed_Bold">RobotoCondensed-Bold</string>
+    <string name="RobotoCondensed_BoldItalic">RobotoCondensed-BoldItalic</string>
+    <string name="RobotoCondensed_Italic">RobotoCondensed-Italic</string>
+    <string name="RobotoCondensed_Light">RobotoCondensed-Light</string>
+    <string name="RobotoCondensed_LightItalic">RobotoCondensed-LightItalic</string>
+    <string name="RobotoCondensed_Regular">RobotoCondensed-Regular</string>
+    <!-- ==========/ Font Names ============== -->
+
+
+    <!-- ========== Drawer stuffs ========== -->
     <string name="drawer_open">Open nav drawer</string>
     <string name="drawer_close">Close nav drawer</string>
 
-    <!-- Drawer categories -->
+    <!-- ========== Drawer categories ========== -->
     <string name="category_drawer_1">Category 1</string>
+    <!-- ==========/ Drawer categories ========== -->
 
-    <!-- Drawer items -->
+    <!-- ========== Drawer items ========== -->
     <string name="item_drawer_1">Item 1</string>
     <string name="item_drawer_2">Item 2</string>
     <string name="item_drawer_3">Item 3</string>
@@ -20,6 +44,9 @@
     <string name="ok">Ok</string>
     <string name="cancel_button">Cancel</string>
     <string name="progress_bar_generic_message">Loading</string>
+    <!-- ==========/ Drawer items ========== -->
+
+    <!-- ==========/ Drawer stuffs ========== -->
 
 
 </resources>

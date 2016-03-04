@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     tools:context="com.basesoft.baseapp.Activities.NavDrawerActivity">
 
-    <include layout="@layout/activity_main"/>
+    <include layout="@layout/inclusion_activity_main"/>
 
     <fragment
         android:fitsSystemWindows="false"
