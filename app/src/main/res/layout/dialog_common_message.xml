@@ -25,7 +25,7 @@
             android:layout_marginRight="@dimen/spacing_normal"
             android:visibility="gone" />
 
-        <TextView
+        <com.basesoft.baseapp.CustomViews.TextViewBase
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

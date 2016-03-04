@@ -5,24 +5,26 @@
 
 
     <!-- ========== Font Names ========= -->
-    <string name="Roboto_Black">Roboto-Black</string>
-    <string name="Roboto_BlackItalic">Roboto-BlackItalic</string>
-    <string name="Roboto_Bold">Roboto-Bold</string>
-    <string name="Roboto_BoldItalic">Roboto-BoldItalic</string>
-    <string name="Roboto_Italic">Roboto-Italic</string>
-    <string name="Roboto_Light">Roboto-Light</string>
-    <string name="Roboto_LightItalic">Roboto-LightItalic</string>
-    <string name="Roboto_Medium">Roboto-Medium</string>
-    <string name="Roboto_MediumItalic">Roboto-MediumItalic</string>
-    <string name="Roboto_Regular">Roboto-Regular</string>
-    <string name="Roboto_Thin">Roboto-Thin</string>
-    <string name="Roboto_ThinItalic">Roboto-ThinItalic</string>
-    <string name="RobotoCondensed_Bold">RobotoCondensed-Bold</string>
-    <string name="RobotoCondensed_BoldItalic">RobotoCondensed-BoldItalic</string>
-    <string name="RobotoCondensed_Italic">RobotoCondensed-Italic</string>
-    <string name="RobotoCondensed_Light">RobotoCondensed-Light</string>
-    <string name="RobotoCondensed_LightItalic">RobotoCondensed-LightItalic</string>
-    <string name="RobotoCondensed_Regular">RobotoCondensed-Regular</string>
+    <string name="Selected_typeface">@string/Roboto_Medium</string>
+
+    <string name="Roboto_Black">fonts/Roboto-Black.ttf</string>
+    <string name="Roboto_BlackItalic">fonts/Roboto-BlackItalic.ttf</string>
+    <string name="Roboto_Bold">fonts/Roboto-Bold.ttf</string>
+    <string name="Roboto_BoldItalic">fonts/Roboto-BoldItalic.ttf</string>
+    <string name="Roboto_Italic">fonts/Roboto-Italic.ttf</string>
+    <string name="Roboto_Light">fonts/Roboto-Light.ttf</string>
+    <string name="Roboto_LightItalic">fonts/Roboto-LightItalic.ttf</string>
+    <string name="Roboto_Medium">fonts/Roboto-Medium.ttf</string>
+    <string name="Roboto_MediumItalic">fonts/Roboto-MediumItalic.ttf</string>
+    <string name="Roboto_Regular">fonts/Roboto-Regular.ttf</string>
+    <string name="Roboto_Thin">fonts/Roboto-Thin.ttf</string>
+    <string name="Roboto_ThinItalic">fonts/Roboto-ThinItalic.ttf</string>
+    <string name="RobotoCondensed_Bold">fonts/RobotoCondensed-Bold.ttf</string>
+    <string name="RobotoCondensed_BoldItalic">fonts/RobotoCondensed-BoldItalic.ttf</string>
+    <string name="RobotoCondensed_Italic">fonts/RobotoCondensed-Italic.ttf</string>
+    <string name="RobotoCondensed_Light">fonts/RobotoCondensed-Light.ttf</string>
+    <string name="RobotoCondensed_LightItalic">fonts/RobotoCondensed-LightItalic.ttf</string>
+    <string name="RobotoCondensed_Regular">fonts/RobotoCondensed-Regular.ttf</string>
     <!-- ==========/ Font Names ============== -->
 
 

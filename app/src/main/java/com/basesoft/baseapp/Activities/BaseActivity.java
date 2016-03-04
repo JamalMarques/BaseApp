@@ -42,10 +42,10 @@ public class BaseActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        MenuInflater inflater = this.getMenuInflater();
-        inflater.inflate(R.menu.base_menu, menu);
-        return true;
+        /*MenuInflater inflater = this.getMenuInflater();
+        inflater.inflate(R.menu.base_menu, menu);*/
+        addTitleStyle();
+        return super.onCreateOptionsMenu(menu);
     }
 
     private void addTitleStyle(){ //call it onCreateOptionsMenu
@@ -53,8 +53,8 @@ public class BaseActivity extends AppCompatActivity {
             Field f = toolBar.getClass().getDeclaredField("mTitleTextView");
             f.setAccessible(true);
             TextView titleTextView = (TextView) f.get(toolBar);
-            //Typeface font = Typeface.createFromAsset(this.getAssets(), "fonts/"+this.getString(R.string.FS_Humana_Light)+".ttf");
-            //titleTextView.setTypeface(font);
+            Typeface font = Typeface.createFromAsset(this.getAssets(), this.getString(R.string.Selected_typeface));
+            titleTextView.setTypeface(font);
         } catch (Exception e){
             e.printStackTrace();
         }

@@ -27,7 +27,7 @@
             android:id="@+id/img_icon"
             android:layout_marginLeft="@dimen/margin_left_drawer" />
 
-        <TextView
+        <com.basesoft.baseapp.CustomViews.TextViewBase
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/common_text_style"
@@ -45,7 +45,7 @@
             android:background="@drawable/notification_background"
             android:id="@+id/notific_layout">
 
-            <TextView
+            <com.basesoft.baseapp.CustomViews.TextViewBase
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/common_text_style"

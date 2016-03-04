@@ -1,13 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="android:textViewStyle">@style/text_base_14</item>
+        <item name="android:textViewStyle">@style/common_text_style</item>
     </style>
 
     <style name="AppTheme" parent="AppTheme.Base">
@@ -32,9 +32,6 @@
 
     <!-- ======== Text Styles - START ======== -->
     <style name="BaseTextStyle">
-        <!--<item name="android:typeface">sans</item>-->
-        <item name="font">@string/Roboto_Light</item>
-        <!--<item name="android:fontFamily">@string/Roboto_Light</item>-->
         <item name="android:textColor">@color/gray3_H</item>
     </style>
 
