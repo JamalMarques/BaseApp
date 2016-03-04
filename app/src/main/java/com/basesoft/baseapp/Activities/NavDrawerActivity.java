@@ -19,6 +19,7 @@ import android.view.WindowManager;
 
 import com.basesoft.baseapp.Common.Constants;
 import com.basesoft.baseapp.Fragments.FragmentNavDrawer;
+import com.basesoft.baseapp.Helpers.DialogHelper;
 import com.basesoft.baseapp.Helpers.Utilities;
 import com.basesoft.baseapp.Models.NavDrawerItemAbs;
 import com.basesoft.baseapp.Models.NavItemCategory;
@@ -61,6 +62,8 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
                 //replaceFragmentNoBackStack();
             }
         });
+
+        DialogHelper.showCommonErrorDialog(this,"Que mala leche que tengo asndajsndakjsndajksndalsndewoufwenownefos",false,null);
     }
 
     @Override

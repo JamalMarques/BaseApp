@@ -4,12 +4,11 @@
     android:orientation="vertical"
     android:paddingTop="@dimen/spacing_large"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_gravity="center"
         android:paddingLeft="@dimen/spacing_large"
         android:orientation="horizontal"
         android:paddingRight="@dimen/spacing_large"
@@ -29,7 +28,6 @@
             style="@style/common_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/modal_icon_alert_iv"
             android:paddingLeft="@dimen/spacing_large"
             android:text="Error text" />
 
