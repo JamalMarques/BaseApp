@@ -6,6 +6,7 @@
 
     <!-- ======== Toolbar dimens ======== -->
     <dimen name="toolbar_default_elevation">4dp</dimen>
+    <dimen name="custom_notification_padding">3dp</dimen>
 
 
     <!-- ======== Text dimens ======== -->
